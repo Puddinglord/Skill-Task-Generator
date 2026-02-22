@@ -44,12 +44,14 @@ You need to be logged in to a world for the plugin to work. Make sure you're in-
 
 ## Credits
 
-- OSRS Wiki content used with permission — https://oldschool.runescape.wiki/
-- Completion sound and code adapted from **m0bilebtw**'s C Engineer Completed plugin
-  - GitHub: https://github.com/m0bilebtw
-  - Plugin repo: https://github.com/m0bilebtw/c-engineer-completed
+This plugin is made possible by:
 
-**Check out C Engineer's content:**
+- **OSRS Wiki** — https://oldschool.runescape.wiki/
+- **m0bilebtw** — completion sound and code from the C Engineer Completed plugin
+  - GitHub: https://github.com/m0bilebtw
+  - Plugin: https://github.com/m0bilebtw/c-engineer-completed
+
+**C Engineer:**
 - YouTube: https://www.youtube.com/c/CEngineer
 - Twitter: https://twitter.com/C_EngineerRS
 - Twitch: https://www.twitch.tv/c_engineer
