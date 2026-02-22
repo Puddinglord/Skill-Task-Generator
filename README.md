@@ -1,6 +1,6 @@
 # Skills Generator
 
-> *Previously known as Bored Generator*
+> A fork of [Skills Generator by MakingStan](https://github.com/MakingStan/Skills-Generator) — fixes the issue where the plugin sometimes didn't work even when logged in.
 
 A RuneLite plugin that generates random OSRS tasks to give you something to work toward when you're not sure what to do next. Pick a category, hit Generate, and get going.
 
