@@ -1,51 +1,59 @@
-#SkillsGenerator
+# Skills Generator
 
-(previously boredgenerator)
+> A fork of [Skills Generator by MakingStan](https://github.com/MakingStan/Skills-Generator) — fixes the issue where the plugin sometimes didn't work even when logged in.
 
-This is a plugin to use when your bored.
-note; you have to be logged in to use this plugin.
+A RuneLite plugin that generates random OSRS tasks to give you something to work toward when you're not sure what to do next. Pick a category, hit Generate, and get going.
 
-Thanks to the osrs wiki for letting me use there content.
-Link: https://oldschool.runescape.wiki/
+**Discord:** https://discord.com/invite/HWhxYsP
 
-Discord: https://discord.com/invite/HWhxYsP
+---
 
+## Features
 
+- Randomly generates tasks across several categories
+- Opens the OSRS Wiki page for your current task with one click
+- Tracks how many tasks you've completed
+- Optional C Engineer completion sound effect (toggle in config)
+- Configurable hotkey to generate a new task (default: Ctrl+S)
 
-**I also used part of m0bilebtw's code from the C engineer completed plugin.**
+---
 
-m0bilebtw's Github: https://github.com/m0bilebtw
+## How to Use
 
-MPbilebtw's c engineer plugin: https://github.com/m0bilebtw/c-engineer-completed
+1. **Open the panel** — click the Skills Generator icon in the RuneLite sidebar (looks like a skills icon with a wheel).
+2. **Choose categories** — tick whichever checkboxes you want tasks from:
+   - Skilling
+   - Pvm
+   - Pking
+   - Prifddinas
+   - Everything
+3. **Click Generate** — a random task will appear.
+4. **Need help?** — click the **Wiki** button to open the OSRS Wiki page for that task.
+5. **Finished the task?** — click **Completed**. Your Tasks Completed count goes up by one.
+6. **Reset your counter** at any time with the **Reset Tasks Completed** button.
+7. **Generate another one** whenever you're ready.
 
+---
 
-**Make sure to watch c engineers video's for more completion**
+## Troubleshooting / FAQ
 
-youtube: https://www.youtube.com/c/CEngineer
+**The plugin isn't generating tasks.**
+You need to be logged in to a world for the plugin to work. Make sure you're in-game before trying to generate.
 
-twitter: https://twitter.com/C_EngineerRS
+---
 
-twitch: https://www.twitch.tv/c_engineer
+## Credits
 
-instagram: https://www.instagram.com/tompan/
+This plugin is made possible by:
 
+- **OSRS Wiki** — https://oldschool.runescape.wiki/
+- **m0bilebtw** — completion sound and code from the C Engineer Completed plugin
+  - GitHub: https://github.com/m0bilebtw
+  - Plugin: https://github.com/m0bilebtw/c-engineer-completed
 
-
-**How to use**
-
-When downloading the plugin you will see a little button with a skills icon with a weel on it. Click it.
-
-Then you will see a menu, here you can check the checkboxes that you feel like doing. 
-
-For example you check the pvm checkbox and click generate. It will then automaticly create a randomly generated task for you.
-
-If you need help you can always click the wiki button to be able to go to the wiki of the current task.
-
-When you have your task completed you can click the completed button and then your tasks completed count will increase. (in the config settings you can check a checkbox to be able to get the c engineer completed sound when clicking this button.
-
-When you have completed a task you can generate a new one!
-
-**Potential future updates**
-
-A shop where you can spend all of your tasks completed count.
+**C Engineer:**
+- YouTube: https://www.youtube.com/c/CEngineer
+- Twitter: https://twitter.com/C_EngineerRS
+- Twitch: https://www.twitch.tv/c_engineer
+- Instagram: https://www.instagram.com/tompan/
 
