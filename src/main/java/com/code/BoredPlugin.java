@@ -221,6 +221,7 @@ public class  BoredPlugin extends Plugin {
 			case LOGGED_IN:
 				loginXp = client.getSkillExperience(DefineSkill.defineSkill(BoredPanel.text.getText()));
 				startUp();
+				break; // prevent fall-through into login/hopping states that reset loginXp
 
 			case HOPPING:
 			case LOGGING_IN:
