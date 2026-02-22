@@ -56,7 +56,7 @@ public class UserHandle {
             BufferedWriter buffer = new BufferedWriter(fw);
             buffer.write(datas+" ");
             buffer.close();
-            BoredPanel.points.setText("Points: " + datas);
+            BoredPanel.tasksCompletedText.setText("Tasks Completed: " + datas);
         }
         else
         {
@@ -67,7 +67,7 @@ public class UserHandle {
             BufferedWriter buffer = new BufferedWriter(fw);
             buffer.write(datas+" ");
             buffer.close();
-            BoredPanel.points.setText("Points: "+datas);
+            BoredPanel.tasksCompletedText.setText("Tasks Completed: "+datas);
 
         }
         try
@@ -99,13 +99,13 @@ public class UserHandle {
         {
             data = scanner.nextInt();
             datas = String.valueOf(data);
-            BoredPanel.points.setText("Points: "+datas);
+            BoredPanel.tasksCompletedText.setText("Tasks Completed: "+datas);
 
         }
     }
 
     public static void reset() throws IOException {
-        String resetConfirm = JOptionPane.showInputDialog(null, "Do you want to reset your points?\nType \"yes\" to confirm");
+        String resetConfirm = JOptionPane.showInputDialog(null, "Do you want to reset your tasks completed count?\nType \"yes\" to confirm");
 
         if(resetConfirm != null)
         {
@@ -113,7 +113,7 @@ public class UserHandle {
             {
                 data = 0;
                 datas = String.valueOf(data);
-                BoredPanel.points.setText("Points: "+datas);
+                BoredPanel.tasksCompletedText.setText("Tasks Completed: "+datas);
 
                 FileWriter fw = new FileWriter(parent);
                 BufferedWriter buffer = new BufferedWriter(fw);
@@ -123,7 +123,7 @@ public class UserHandle {
             }
             else
             {
-                System.out.println("the user cancelled resetting points");
+                System.out.println("the user cancelled resetting tasks completed count");
             }
         }
     }

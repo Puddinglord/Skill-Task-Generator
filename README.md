@@ -41,11 +41,11 @@ For example you check the pvm checkbox and click generate. It will then automati
 
 If you need help you can always click the wiki button to be able to go to the wiki of the current task.
 
-When you have your task completed you can click the completed button and then you will get a point. (in the config settings you can check a checkbox to be able to get the c engineer completed sound when clicking this button.
+When you have your task completed you can click the completed button and then your tasks completed count will increase. (in the config settings you can check a checkbox to be able to get the c engineer completed sound when clicking this button.
 
 When you have completed a task you can generate a new one!
 
 **Potential future updates**
 
-A shop where you can spend all of your points.
+A shop where you can spend all of your tasks completed count.
 

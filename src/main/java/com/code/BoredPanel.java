@@ -47,12 +47,12 @@ import javax.swing.*;
 @Singleton
 public class BoredPanel extends PluginPanel {
     public static int xp,randint,randomNumber = 1; //starting with 1 because it else will autocomplete the task.
-    public static JButton generate, wikiButton, completed, resetPointsButton;
+    public static JButton generate, wikiButton, completed, resetTasksCompletedButton;
     public static JTextField text;
     public JCheckBox pking, everything, pvming, skilling, prif;
     public static String Chekker, url, skillTask,skilT;
     public static String[] pvmTasks, pvmg;
-    public static JTextArea explain,points;
+    public static JTextArea explain,tasksCompletedText;
     private BufferedImage img = ImageUtil.loadImageResource(getClass(), "/pix.png");
     public JLabel Image = new JLabel(new ImageIcon(img));
     private final Random random = new Random();
@@ -81,10 +81,10 @@ public class BoredPanel extends PluginPanel {
         everything = new JCheckBox("Everything");
         skilling = new JCheckBox("Skilling");
         explain = new JTextArea("If this plugin does not \nwork please log in :).");
-        points = new JTextArea("Points: 0");
+        tasksCompletedText = new JTextArea("Tasks Completed: 0");
         completed = new JButton("Completed");
         wikiButton = new JButton("Wiki");
-        resetPointsButton = new JButton("Reset Points");
+        resetTasksCompletedButton = new JButton("Reset Tasks Completed");
         UserHandle.start();
 
 
@@ -104,8 +104,8 @@ public class BoredPanel extends PluginPanel {
 
         wikiButton.setForeground(Color.orange);
 
-        points.setEditable(false);
-        points.setBackground(Color.gray);
+        tasksCompletedText.setEditable(false);
+        tasksCompletedText.setBackground(Color.gray);
 
         explain.setEditable(false);
         explain.setBackground(Color.gray);
@@ -122,10 +122,10 @@ public class BoredPanel extends PluginPanel {
         completed.setBackground(ColorScheme.DARKER_GRAY_COLOR);
         completed.setVisible(false);
 
-        resetPointsButton.setForeground(Color.RED);
-        resetPointsButton.setBackground(ColorScheme.DARKER_GRAY_COLOR);
+        resetTasksCompletedButton.setForeground(Color.RED);
+        resetTasksCompletedButton.setBackground(ColorScheme.DARKER_GRAY_COLOR);
 
-        resetPointsButton.addActionListener(e -> {
+        resetTasksCompletedButton.addActionListener(e -> {
             try
             {
                 UserHandle.reset();
@@ -151,8 +151,8 @@ public class BoredPanel extends PluginPanel {
         });
 
 
-        add(points);
-        add(resetPointsButton);
+        add(tasksCompletedText);
+        add(resetTasksCompletedButton);
         add(prif);
         add(everything);
         add(pking);
