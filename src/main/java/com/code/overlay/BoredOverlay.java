@@ -61,7 +61,7 @@ public class BoredOverlay extends Overlay {
                     80));
 
             panelComponent.getChildren().add(LineComponent.builder()
-                    .right(String.valueOf(BoredPanel.points.getText()))
+                    .right(String.valueOf(BoredPanel.tasksCompletedText.getText()))
                     .left(BoredPanel.explain.getText())
                     .build());
 
