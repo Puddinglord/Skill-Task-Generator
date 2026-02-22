@@ -24,12 +24,14 @@
  */
 package com.code;
 
+import lombok.extern.slf4j.Slf4j;
 import net.runelite.client.RuneLite;
 
 import javax.swing.*;
 import java.io.*;
 import java.util.Scanner;
 
+@Slf4j
 public class UserHandle {
     //sorry if this code is very messy its my first database "kindof" thing :)
 
@@ -41,7 +43,7 @@ public class UserHandle {
     {
         if(parent.createNewFile())
         {
-            System.out.println("file created succesfully");
+            log.info("file created successfully");
         }
         Scanner scanner = new Scanner(parent);
 
@@ -51,7 +53,7 @@ public class UserHandle {
         {
             data++;
             datas = String.valueOf(data);
-            System.out.println(datas);
+            log.debug("Initial task count: {}", datas);
             FileWriter fw = new FileWriter(parent);
             BufferedWriter buffer = new BufferedWriter(fw);
             buffer.write(datas+" ");
@@ -72,11 +74,11 @@ public class UserHandle {
         }
         try
         {
-            System.out.println(reader.read());
+            log.debug("File read position: {}", reader.read());
         }
         catch (IOException ioException)
         {
-            ioException.printStackTrace();
+            log.error("Failed to read task file", ioException);
         }
         reader.close();
     }
@@ -84,7 +86,7 @@ public class UserHandle {
     {
         if(parent.createNewFile())
         {
-            System.out.println("first file created");
+            log.info("first file created");
         }
         Scanner scanner = new Scanner(parent);
 
@@ -123,7 +125,7 @@ public class UserHandle {
             }
             else
             {
-                System.out.println("the user cancelled resetting tasks completed count");
+                log.debug("User cancelled resetting tasks completed count");
             }
         }
     }

@@ -132,7 +132,7 @@ public class BoredPanel extends PluginPanel {
             }
             catch (IOException ex)
             {
-                ex.printStackTrace();
+                log.error("Failed to reset tasks completed count", ex);
             }
         });
 
@@ -143,7 +143,7 @@ public class BoredPanel extends PluginPanel {
             try {
                 java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
             } catch (IOException e1) {
-                e1.printStackTrace();
+                log.error("Failed to open wiki URL", e1);
             }
         });
         generate.addActionListener(e -> {
@@ -180,7 +180,7 @@ public class BoredPanel extends PluginPanel {
         try {
             UserHandle.handle();
         } catch (IOException ioException) {
-            ioException.printStackTrace();
+            log.error("Failed to update tasks completed count", ioException);
         }
         remove(Image);
         text.setText("Completed!");
