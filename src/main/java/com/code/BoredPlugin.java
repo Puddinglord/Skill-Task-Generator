@@ -169,7 +169,7 @@ public class  BoredPlugin extends Plugin {
 		}
 		skillValue = BoredPanel.skillTask;
 
-		System.out.println("prexp "+preXp+"\nloginxp :"+loginXp);
+		log.debug("preXp={} loginXp={}", preXp, loginXp);
 
 
 		if(preXp >=loginXp ||preXp == -1)
@@ -236,7 +236,7 @@ public class  BoredPlugin extends Plugin {
 	private void checkHalfXp()
 	{
 		if(skillValue.equalsIgnoreCase("Copper/Tin ore") || skillValue.equalsIgnoreCase("Trout/Salmon")) {
-			System.out.println("trout and salmon");
+			log.debug("Trout/Salmon or Copper/Tin ore task - counting half-xp");
 			counter++;
 
 			toGo = BoredPanel.randomNumber-counter;

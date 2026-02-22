@@ -42,6 +42,17 @@ You need to be logged in to a world for the plugin to work. Make sure you're in-
 
 ---
 
+## Branch Information
+
+The default branch for this repository is **`main`**.
+
+> **Repository maintainer note:** If you still see `master` as the default branch in GitHub repository settings, please switch it manually:
+> 1. Go to **Settings → Branches** in the GitHub repository.
+> 2. Change the **Default branch** from `master` to `main`.
+> 3. Click **Update** and confirm.
+
+---
+
 ## Credits
 
 This plugin is made possible by:
